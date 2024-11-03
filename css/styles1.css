@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #232933;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3e4a61;
+}
+
+header .logo img {
+  height: 40px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+header nav .menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header nav .menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.config-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.config-section button {
+  background-color: #5a6777;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 1em;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #3e4a61;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar button {
+  width: 100%;
+  background-color: #7c818c;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar button.active {
+  background-color: #ff4d4d;
+}
+
+.sidebar .exit-icon {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #fff;
+}

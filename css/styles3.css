@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #232933;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3e4a61;
+  }
+  
+  header .logo img {
+    height: 40px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  header nav .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  header nav .menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  main {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .plans {
+    flex: 2;
+    padding-right: 20px;
+  }
+  
+  .plans h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .plan-card {
+    background-color: #3e4a61;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .plan-low-vision {
+    background-color: #7c818c;
+  }
+  
+  .plan-partial-blindness {
+    background-color: #6753a6;
+  }
+  
+  .plan-total-blindness {
+    background-color: #c2a540;
+  }
+  
+  .plan-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .plan-card p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .plan-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .plan-card ul li {
+    margin-bottom: 5px;
+  }
+  
+  .plan-card button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #3e4a61;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar button {
+    width: 100%;
+    background-color: #7c818c;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sidebar button.active {
+    background-color: #ff4d4d;
+  }
+  
+  .sidebar .exit-icon {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #fff;
+  }
+  

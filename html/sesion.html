@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisiApp</title>
+    <link rel="stylesheet" href="sesion.css" />
+  </head>
+  <body>
+    <div class="container2">
+      <header>
+        <a href="principal.html">
+          <img src="img/logo_transp.png" alt="Logo2" class="logo2" />
+        </a>
+      </header>
+
+      <div class="content2">
+        <div class="logo-image">
+          <img src="img/logo_transp.png" alt="Logo Grande" class="logo-large" />
+          <h1>VisiApp</h1>
+        </div>
+        <form class="login-form" action="#" method="post">
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="USUARIO"
+              name="usuario"
+              class="input"
+              required
+            />
+            <span class="icon user-icon"></span>
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              placeholder="CONTRASEÑA"
+              name="contrasena"
+              class="input"
+              required
+            />
+            <span class="icon password-icon"></span>
+          </div>
+          <a href="index.html">
+            <button type="submit" class="submit-button">Iniciar Sesión</button>
+          </a>
+        </form>
+        <p>O INGRESA CON:</p>
+
+        <button class="social-login google">GOOGLE</button>
+        <button class="social-login facebook">FACEBOOK</button>
+        <p class="register">¿NO TIENE UNA CUENTA? <a href="#">REGÍSTRESE</a></p>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector(".login-form")
+        .addEventListener("submit", function (event) {
+          const username = document.querySelector(
+            'input[name="usuario"]'
+          ).value;
+          const password = document.querySelector(
+            'input[name="contrasena"]'
+          ).value;
+          const usernameValid = username.length >= 5; // Adjust as needed
+          const passwordValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/.test(
+            password
+          );
+
+          if (!usernameValid || !passwordValid) {
+            event.preventDefault(); // Prevent form submission
+            alert(
+              "Usuario debe tener al menos 5 caracteres, y contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, y un número."
+            );
+          }
+        });
+    </script>
+    <script>
+      document
+        .querySelector(".login-form")
+        .addEventListener("submit", function (event) {
+          const username = document.querySelector(
+            'input[name="usuario"]'
+          ).value;
+          const password = document.querySelector(
+            'input[name="contrasena"]'
+          ).value;
+
+          // Validate the username and password length
+          if (username.length >= 5 && password.length >= 8) {
+            // Adjust according to your validation criteria
+            // Redirect to your target page if validation passes
+            window.location.href = "pagina_deseada.html"; // Replace with your target URL
+          } else {
+            event.preventDefault(); // Prevent form submission if validation fails
+            alert("Por favor, revise el usuario y la contraseña.");
+          }
+        });
+    </script>
+  </body>
+</html>
